@@ -1,0 +1,15 @@
+{% extends "AppFilmyFreaks/header.html" %}
+ 
+{% block content %}
+
+<img src={{movieBasicData.0.movie_poster}} style="float:left;margin: 0" width ="400px" height ="550px"/>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size ="4">    Movie Title:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{movieBasicData.0.movie_title}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Language:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{language}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Genre:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{genre}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Date of release:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{movieDetails.0.release_date}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Rating:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{movieDetails.0.rating}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Duration:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;<font size ="4">{{movieDetails.0.runtime}}</font></br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="4">    Description:</font></b>&nbsp;&nbsp;&nbsp;&nbsp;;<font size ="4">{{movieDetails.0.plot}}</font></br></br>
+{% endblock %}
+

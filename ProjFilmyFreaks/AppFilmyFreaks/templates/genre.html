@@ -1,0 +1,68 @@
+{% extends "AppFilmyFreaks/header.html" %}
+ 
+{% block content %}
+
+
+<center>
+
+<div class="container">
+<button class="button">{{GenreName}} Movies</button><br><br><br><br>
+
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.0.movie_id.movie_id}}"><img src={{moviesList.0.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.1.movie_id.movie_id}}">
+  <img src={{moviesList.1.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.2.movie_id.movie_id}}">
+    <img src={{moviesList.2.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.3.movie_id.movie_id}}">
+     <img src={{moviesList.3.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.4.movie_id.movie_id}}"> 
+  <img src={{moviesList.4.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+ </a>
+</div><br><br><br>
+<div class="container">
+
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.5.movie_id.movie_id}}">
+  <img src={{moviesList.5.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.6.movie_id.movie_id}}"> 
+  <img src={{moviesList.6.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.7.movie_id.movie_id}}">
+    <img src={{moviesList.7.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+    <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.8.movie_id.movie_id}}">
+     <img src={{moviesList.8.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.9.movie_id.movie_id}}">
+  <img src={{moviesList.9.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+ 
+</div><br><br><br>
+<div class="container">
+
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.10.movie_id.movie_id}}">
+  <img src={{moviesList.10.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.11.movie_id.movie_id}}"> 
+  <img src={{moviesList.11.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.12.movie_id.movie_id}}">
+    <img src={{moviesList.12.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+    <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.13.movie_id.movie_id}}">
+     <img src={{moviesList.13.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+     <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.14.movie_id.movie_id}}">
+  <img src={{moviesList.14.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+ 
+</div><br><br><br>
+<div class="container">
+
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.15.movie_id.movie_id}}">
+  <img src={{moviesList.15.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.16.movie_id.movie_id}}">
+  <img src={{moviesList.16.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"></a>
+  <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.17.movie_id.movie_id}}">
+    <img src={{moviesList.17.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+    <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.18.movie_id.movie_id}}">
+     <img src={{moviesList.18.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+     <a href="http://127.0.0.1:8000/filmyfreaks/moviedetails/{{moviesList.19.movie_id.movie_id}}">
+  <img src={{moviesList.19.movie_poster}} class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> </a>
+ 
+</div>
+
+</center>
+
+
+{% endblock %}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <style>
+     header,footer { padding:1em; color:white; background-color:#FF6600; clear:left; text-align : center;}    
+   </style>
+</head>
+
+<body>
+    <header>
+       <center> <b><i><font face = "times new roman"><font size = "10">Filmy Freaks</font></font></i></b></center></header>
+
+    <div css="container">
+        <ul class="nav nav-tabs">
+           <li class="active"><a href="#">Home</a></li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages<span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                   <li><a href="#">English</a></li>
+                   <li><a href="#">Japanese</a></li>  
+	           <li><a href="#">German</a></li>
+                   <li><a href="#">Spanish</a></li>
+         	   <li><a href="#">Portuguese</a></li>
+	           <li><a href="#">Korean</a></li>    
+        	   <li><a href="#">Chinese</a></li>  
+                   <li><a href="#">Hindi</a></li>                      
+                   <li><a href="#">Spanish</a></li>  
+                   <li><a href="#">French</a></li>  
+                </ul>
+           </li>
+           <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Genres<span class="caret"></span></a>
+                <ul class="dropdown-menu"> 
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Comedy</a></li>  
+	            <li><a href="#">Animation</a></li>
+                    <li><a href="#">SciFi</a></li>
+	            <li><a href="#">Adventure</a></li>   
+                    <li><a href="#">Crime</a></li>   
+                    <li><a href="#">Documentary</a></li> 
+                    <li><a href="#">Drama</a></li>   
+                    <li><a href="#">Family</a></li>   
+                    <li><a href="#">Fantasy</a></li>   
+                    <li><a href="#">History</a></li>   
+                    <li><a href="#">Horror</a></li>   
+                    <li><a href="#">Music</a></li>   
+                    <li><a href="#">Mystery</a></li>     
+                    <li><a href="#">Romance</a></li>   
+                    <li><a href="#">Thriller</a></li>   
+                    <li><a href="#">War</a></li>   
+                    <li><a href="#">Western</a></li>                      
+                </ul>
+           </li>   
+     </div>
+     <div class="container">
+         <h2>Carousel Example</h2>  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+             <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                 <div class="item active">
+                   {% for i in newmovieslist %}
+                       <img src= "{{i}}">
+                   {% endfor %}
+                 </div>
+              </div>
+               <!-- Left and right controls -->
+             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                 <span class="glyphicon glyphicon-chevron-left"></span>
+                 <span class="sr-only">Previous</span>
+             </a>
+             <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                 <span class="glyphicon glyphicon-chevron-right"></span>
+                 <span class="sr-only">Next</span>
+             </a>
+           </div>
+        </div>
+
+     <center>
+        <div class="container">
+        <h2 align = "left">Telugu</h2>
+ 
+           <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+           <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100">
+           <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+     <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+ 
+</div>
+<div class="container">
+  <h2 align = "left">Telugu</h2>
+ 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100">
+    <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+     <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+ 
+</div>
+<div class="container">
+  <h2 align = "left">Telugu</h2>
+ 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100">
+    <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+     <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+  <img src="http://image.tmdb.org/t/p/w300/bOXBV303Fgkzn2K4FeKDc0O31q4.jpg" class="img-thumbnail" alt="Cinque Terre" width="200" height="100"> 
+ 
+</div>
+</center>
+
+</body>
+</html>
