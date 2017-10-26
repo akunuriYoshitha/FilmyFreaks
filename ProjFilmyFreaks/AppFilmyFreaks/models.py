@@ -77,11 +77,12 @@ class UserReviews(models.Model):
 
     def __str__(self):
         return self.movie_id
-
+        
 class UserPreferences(models.Model):
-    languages = models.CharField(max_length = 1000)
-    genres = models.CharField(max_length = 1000)
+    username = models.CharField(max_length = 150)
+    preferLanguage = models.CharField(max_length = 100)
 
     def __str__(self):
-        return languages
+        return self.username
+
 

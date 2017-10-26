@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AppFilmyFreaks'
 ]
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/filmyfreaks/'
+LOGOUT_REDIRECT_URL = 'http://127.0.0.1:8000/filmyfreaks/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -3,12 +3,12 @@ import urllib
 import json
 from random import randint
 
-from app1.models import MoviesLangGen, MovieBasicData, MovieDetails
+from AppFilmyFreaks.models import MoviesLangGen, MovieBasicData, MovieDetails
 
 def insertData():
     
     languages_list = ['en', 'hi', 'de', 'it', 'ja', 'pt', 'fr', 'ko', 'es', 'zh']
-    for pagenum in range(122, 200):
+    for pagenum in range(201, 250):
         print(pagenum)
         url = "https://api.themoviedb.org/3/discover/movie?api_key=36c6b5e06500346bf5c9b6949cf2ed4a&sort_by=popularity.desc&include_adult=false&include_video=false&page=" + str(pagenum)
         req = urllib.request.Request(url)
